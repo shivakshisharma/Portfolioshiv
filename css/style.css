@@ -1,0 +1,436 @@
+/*import fonts from fonts.css file*/
+@import url(./fonts.css);
+/*css partials*/
+@import url(./partials/_variable.css);
+
+#nav-bar{
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+.navbar-brand img{
+    height:40px;
+    padding-left:30px;
+}
+.navbar-nav li{
+ padding:0 10px;
+
+}
+.navbar-nav li  a{
+float:right;
+text-align:right;
+}
+#nav-bar ul li a:hover{
+color:blue!important;
+
+}
+.nav-bar{
+    background:white;
+
+
+}
+.navbar-toggler{
+    border:none!important;
+}
+.nav-link{
+    color:#555!important;
+    font-weight:600;
+    font-size:16px;
+}
+body{
+    background-color: pink;
+}
+/*start navigation*/
+.header_area.main-menu.navbar-brand{
+    padding:0 2rem 0 5rem;
+
+}
+.header_area.main-menu.navbar{
+    padding:1rem 20rem;
+}
+.nav-item.nav-link{
+    font-family:var(--roboto);
+    text-transform: uppercase;
+    font-weight:500;
+    padding:1.7rem;
+    color:(--title-color);
+
+}
+.header_area.main-menu.navbar-nav a:hover
+{
+    background:var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+
+
+
+}
+/*banner area*/
+.site-main.site-banner{
+    background: url(../portfolio/images/girl.jpg)no-repeat;
+    background-position: 0% 50%;
+
+}
+.site-main.site-banner.site-title h3{
+    padding-top: 35%;
+    font-variation-settings: 500;
+}
+.site-main.site-banner.site-title h3::after{
+    content:" ";
+    height:2px;
+    width:18vw;
+    background:black;
+    display:inline-block;
+    margin-left:5%;
+    transform: translateY(-10px);
+}
+.site-main.site-banner.site-title h1{
+    font-size:5rem;
+
+}
+.site-main.site-banner.site-title h4{
+    font-size:1.5rem;
+
+}
+.site-main.site-banner.site-title.banner-image>img{
+    padding:7rem 0;
+    width:90rem;
+
+}
+.title-text{
+    font-style: italic;
+    font: large;
+    font-weight: bold;
+    margin-top: 65px;
+    margin-block: initial;
+    background-color: white;
+    padding-block: inherit;
+     
+}
+.button.btn{
+    margin-right: 20px;
+}
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.para{
+    padding-top:50px;
+    padding-bottom:50px;
+    color:#555;
+    padding-right: 50px;
+}
+.site.main.about-area{
+    padding:8rem 5rem;
+}
+.brand-area{
+    padding:1rem 20rem;
+    margin-bottom:4rem;
+}
+.brand-area.first-row.col-lg-4{
+    display:flex;
+    justify-content: center;
+}
+.brand-area.experience-area{
+    padding-left: 1rem;
+}
+.brand-area.experience-area span{
+    display:block;
+}
+.site-main.brand-area.experience-area.years-area{
+    background:url(../portfolio/img/back.jpg)no-repeat 45px 20px;
+    padding:2rem;
+    width:40rem;
+    height:18rem;
+    padding-left:8rem;
+    position: relative;
+}
+#services{
+    background-image: url(../cssfolder/images/service.jpg);
+    background-size:cover;
+    background-position: center;
+    color:blue!important;
+    background-attachment: fixed;
+    padding-top:50px;
+    padding-bottom:50px;;
+}
+#services h1{
+    text-align:center;
+    color:blue;
+    padding-bottom:10px;
+}
+#services h1::after{
+    content:'';
+    background:blue;
+    display:block;
+    height:3px;
+    width:170px;
+    margin:20px auto;
+}
+.services{
+    margin-top:40px;
+
+}
+.icon{
+    font-size:40px;
+    margin:20px auto;
+    padding:20px;
+    height:80px;
+    width:80px;
+    border:1px solid blue;
+    border-radius:50%
+
+
+}
+#services p{
+    font-size:14px;
+    margin-top:20px;
+    color:black;
+    
+}
+.services .icon:hover{
+    background:pink;
+    cursor:pointer;
+    transition:0.7s;
+}
+#team{
+    padding-top:50px;
+    padding-bottom:50px;
+    color:#555;
+
+}
+h1{
+    text-align:center;
+    color:#555!important;
+    padding-bottom:10px;
+}
+h1::after{
+    content:'';
+    background:#007bff;
+    display:block;
+    height:3px;
+    width:170px;
+    margin:20px auto 5px;
+}
+.profile-pic{
+    margin-top:25px;
+}
+.profile-pic .img-box{
+    filter:grayscale(1)
+}
+.profile-pic .img-box img:hover{
+    filter:grayscale(0);
+    cursor:pointer;
+}
+.profile-pic h2{
+    font-size:22px;
+    font-weight:bold;
+    margin-top:15px;
+    color:blue!important;
+}
+.profile-pic h3{
+    font-size:15px;
+    font-weight:bold;
+    margin-top:15px;
+    
+
+    }
+#team .fa{
+       height:25px;
+       width:25px;
+       color:blue;
+       background:#fff;
+       padding:4px;
+       border-radius:50%;
+
+
+}
+.img-box ul{
+    padding:15px 0;
+    position:absolute;
+    z-index:2;
+    top:0;
+    left:50%;
+    transform :translateX(-50%);
+    opacity:0;
+    
+}
+.img-box ul li{
+    padding:5px;
+    display:inline-block;
+}
+.img-box:hover ul{
+    opacity:1;
+
+}
+.img-box ul,.img-box ul li{
+    transition:0.5s;
+}
+#promo{
+    background-image:url(../cssfolder/images/e.jpg);
+    background-size:cover;
+    background-position:center;
+    color:white;
+    background-attachment: fixed;
+    text-align: center;
+    padding:100px;
+    font-family:sans-serif;
+    font-size:38px;
+}
+
+
+.fa-check-circle{
+    color:green;
+    margin-right:10px;
+    font-size:20px;
+}
+.fa-times-circle{
+    color:red;
+    margin-right:10px;
+    font-size:20px;
+}
+.price-button{
+    display:inline;
+    float: left;
+    padding:15px 15px 30px;
+    text-align-center;
+    width:100%;
+}
+.buy-btn{
+    background-color:blue;
+    border-radius:3px;
+    display: inline;-block;
+    font-size:12px;
+    padding:15px 30px;
+    transition:.5s;
+}
+.buy-botton:hover{
+    border-color:1px solid white;
+    background:red;
+
+}
+a{
+    text-decoration: none!important;
+    color:white!important;
+}
+#testimonials{
+        padding-top:50px;
+        padding-bottom:50px;
+        
+        
+    }
+
+#testimonials.row{
+          margin-top:30px;
+} 
+.col-md-4{
+  margin:50px auto;  
+} 
+.profile{
+    padding:70px 10px 30px;
+    background-color:#efefef ;}
+
+.user{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+
+} 
+.profile img{
+    top:-60px;
+    position:absolute;
+    left:calc(50% -60px);
+    border:10px solid white;
+    
+}
+.profile h3{
+    font-size:20px;
+    margin-top:15px;
+    color:#007bff;
+}
+#testimonials span{
+    font-size:12px;
+    color:black;
+
+}
+blockquote{
+    font-size:16pz;
+    line-height:30px;
+}
+
+
+blockquote::before
+
+{
+        content:'\93';
+        font-size:50px;
+        color:#007bff;
+        position:relative;
+        line-height:20px;
+        bottom:-15px;
+        right:5px;
+}
+
+blockquote::after
+
+{
+        content:'\94';
+        font-size:50px;
+        color:#007bff;
+        position:relative;
+        line-height:10px;
+        bottom:-15px;
+        left:5px;
+}
+
+
+
+.profile{
+    box-shadow:0 0 15px 15px rgba(0,0,0,0.6);
+    cursor:pointer;
+    transition:0.5s;
+}
+
+#contact{
+    background-color:#efefef;
+    padding-top:40px;
+    padding-bottom:40px;
+    color:#777;
+}
+.contact-form{
+    padding:15px;
+}
+.form-control{
+    border-radius:0!important;
+    border:none!important;
+
+}
+::placeholder{
+    color:#999!important;
+
+}
+.follow{
+    background:blue;
+    padding:10px;
+    margin:15px;
+
+}
+.contact-info.fa{
+    margin:10px;
+    color:blue;
+    font-weight:bold;
+}
+
+#footer 
+{
+  background-color:#333;
+  color:white;
+  padding:12px;  
+}
+.fa-heart-o{
+    margin:3px;
+    color:red;
+    
+}
